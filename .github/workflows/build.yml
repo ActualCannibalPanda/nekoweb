@@ -1,0 +1,21 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to NekoWeb
+        uses: indiefellas/deploy2nekoweb@main
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-domain: "currdurr.nekoweb.org"
+          nekoweb-username: "currdurr"
+          directory: "currdurr.nekoweb.org"
