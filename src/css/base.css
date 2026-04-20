@@ -1,7 +1,16 @@
+body {
+    background-color: black;
+    color: #eff1ff;
+    text-shadow: 2px 2px #212421,
+        1px 1px #212021;
+}
+
 nav {
     width: 100px;
     height: 100px;
     display: inline-block;
+    background: linear-gradient(0deg, #06004d 0%, #04009d 100%);
+    border-radius: 15px 0px 0px 15px;
 }
 
 nav ul {
@@ -9,17 +18,38 @@ nav ul {
     margin: 0;
     padding: 5px 0px;
     text-align: center;
+    border-color: #424542;
+    border-width: 1px;
+    box-shadow: 1px 1px #e7dfe7,
+        -1px -1px #e7dfe7,
+        1px -1px #e7dfe7,
+        -1px 1px #e7dfe7,
+        0 -2px #9c9a9c,
+        -2px 0 #7b757b,
+        0 2px #424542;
     border-style: solid none solid solid;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #eff1ff;
+    text-shadow: 2px 2px #212421,
+        1px 1px #212021;
+    text-decoration: none;
 }
 
 nav ul:first-of-type {
     border-radius: 15px 0px 0px 0px;
     border-style: solid none none solid;
+    border-width: 1px;
 }
 
 nav ul:last-of-type {
     border-radius: 0px 0px 0px 15px;
     border-style: none none solid solid;
+    border-width: 1px;
 }
 
 .page {
@@ -33,4 +63,14 @@ nav ul:last-of-type {
     width: 100%;
     border-style: solid;
     border-radius: 0px 15px 15px 0px;
+    border-color: #424542;
+    box-shadow: 1px 1px #e7dfe7,
+        -1px -1px #e7dfe7,
+        1px -1px #e7dfe7,
+        -1px 1px #e7dfe7,
+        0 -2px #9c9a9c,
+        -2px 0 #7b757b,
+        0 2px #424542;
+    border-style: solid none solid solid;
+    background: linear-gradient(0deg, #06004d 0%, #04009d 100%);
 }
