@@ -74,3 +74,8 @@ nav ul:last-of-type {
     border-style: solid none solid solid;
     background: linear-gradient(0deg, #06004d 0%, #04009d 100%);
 }
+
+img[alt=Mithra] {
+    width: 32px;
+    height: 32px;
+}

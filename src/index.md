@@ -3,43 +3,15 @@ title: home page
 layout: base.njk
 ---
 
-Hello World
+## Welcome
 
-This is a test
+I am ActualPanda a game developer and gamer from Ireland. I plan to use this website for talking about programming and projects I work on.
 
-Hello World
+### Games I play:
 
-This is a test
+<div align="center">
+    <img src="assets/mr15.png" alt="Mithra">
+</div>
 
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
-Hello World
-
-This is a test
-
+<p align="center"><b>Final Fantasy XI</b>: Cromakre (<em>Bahamut</em>)</p>
+<p align="center"><b>Final Fantasy XIV</b>: Krieger Welt (<em>Odin</em>)</p>
