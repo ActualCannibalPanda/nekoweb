@@ -1,0 +1,36 @@
+nav {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    border-style: solid none solid solid;
+}
+
+nav ul:first-of-type {
+    border-radius: 15px 0px 0px 0px;
+    border-style: solid none none solid;
+}
+
+nav ul:last-of-type {
+    border-radius: 0px 0px 0px 15px;
+    border-style: none none solid solid;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+}
+
+.content {
+    padding: 0px 10px;
+    width: 100%;
+    border-style: solid;
+    border-radius: 0px 15px 15px 0px;
+}
