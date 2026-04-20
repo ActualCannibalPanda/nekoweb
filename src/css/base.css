@@ -7,16 +7,22 @@ body {
 
 nav {
     width: 100px;
-    height: 100px;
+    height: 130px;
+    margin: 0;
     display: inline-block;
     background: linear-gradient(0deg, #06004d 0%, #04009d 100%);
     border-radius: 15px 0px 0px 15px;
 }
 
 nav ul {
-    list-style-type: none;
     margin: 0;
-    padding: 5px 0px;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 10px;
+    margin: 0;
     text-align: center;
     border-color: #424542;
     border-width: 1px;
@@ -30,23 +36,23 @@ nav ul {
     border-style: solid none solid solid;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
     color: #eff1ff;
     text-shadow: 2px 2px #212421,
         1px 1px #212021;
     text-decoration: none;
 }
 
-nav ul:first-of-type {
+nav ul li:first-of-type {
     border-radius: 15px 0px 0px 0px;
     border-style: solid none none solid;
     border-width: 1px;
 }
 
-nav ul:last-of-type {
+nav ul li:last-of-type {
     border-radius: 0px 0px 0px 15px;
     border-style: none none solid solid;
     border-width: 1px;
@@ -75,7 +81,34 @@ nav ul:last-of-type {
     background: linear-gradient(0deg, #06004d 0%, #04009d 100%);
 }
 
-img[alt=Mithra] {
+.content img[alt=Mithra] {
     width: 32px;
     height: 32px;
+}
+
+.content a:link,
+.content a:visited,
+.content a:hover,
+.content a:active {
+    color: #eff1ff;
+    text-shadow: 2px 2px #212421,
+        1px 1px #212021;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.ffxi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.ffxi p {
+    margin: 0;
 }

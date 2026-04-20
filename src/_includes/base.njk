@@ -1,24 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/css/base.css"/>
-    <title>{{title or "My Website"}}</title>
+    {% include "partials/head.njk" %}
   </head>
   <body>
     <div class="page">
-      <nav>
-        <ul>
-          <a href="/">Home</a>
-        </ul>
-        <ul>
-          <a href="/about">About</a>
-        </ul>
-        <ul>
-          <a href="/blog">Blog</a>
-        </ul>
-      </nav>
+      {% include "partials/nav.njk" %}
       <div class="content">
         {{ content | safe }}
       </div>
