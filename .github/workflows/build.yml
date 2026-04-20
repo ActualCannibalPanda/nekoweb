@@ -12,10 +12,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: actions/setup-node@v3
+        with:
+        node-version: 20.x
+
+      - run: npm install
+
+      - run: npx @11ty/eleventy
+
       - name: Deploy to NekoWeb
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: "currdurr.nekoweb.org"
           nekoweb-username: "currdurr"
-          directory: "currdurr.nekoweb.org"
+          directory: "_site"
