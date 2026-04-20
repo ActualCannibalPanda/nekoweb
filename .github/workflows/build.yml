@@ -24,6 +24,6 @@ jobs:
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-          nekoweb-domain: "currdurr.nekoweb.org"
-          nekoweb-username: "currdurr"
+          nekoweb-domain: "actualpanda.nekoweb.org"
+          nekoweb-username: "actualpanda"
           directory: "_site"
