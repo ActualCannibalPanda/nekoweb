@@ -3,7 +3,7 @@ $black-color: #06004d;
 $text-color: #eff1ff;
 
 $nav-height: 217px;
-$nav-width: 350px;
+$nav-width: 340px;
 
 html {
   height: 100%;
@@ -92,7 +92,7 @@ nav {
 
 @media screen and (width <=600px) {
   nav {
-    width: $nav-width;
+    width: 100%;
     height: 43px;
     background: linear-gradient(0deg, $black-color 0%, $blue-color 100%);
     border-radius: 15px 0px 0px 15px;
@@ -101,13 +101,16 @@ nav {
     flex-grow: 1;
 
     ul {
-      display: flex;
-      flex-flow: row;
+      display: table;
+      width: 100%;
+      table-layout: fixed;
       margin: 0;
       padding: 0;
       list-style-type: none;
 
       li {
+        display: table-cell;
+        width: auto;
         padding: 10px;
         margin: 0;
         text-align: center;
@@ -189,12 +192,6 @@ nav {
     max-width: 800px;
   }
 
-  @media only screen and (max-width: 600px) {
-    p {
-      max-width: 100%;
-    }
-  }
-
   h1 {
     margin-top: 5px;
     margin-bottom: 0;
@@ -246,6 +243,94 @@ nav {
     list-style: none;
     padding: 0;
     margin-top: 0;
+  }
+}
+
+@media screen and (width <=600px) {
+  .content {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: $nav-height - 40px;
+    padding: 20px;
+    margin: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: #424542;
+    box-shadow:
+      1px 1px #e7dfe7,
+      -1px -1px #e7dfe7,
+      1px -1px #e7dfe7,
+      -1px 1px #e7dfe7,
+      0 -2px #9c9a9c,
+      -2px 0 #7b757b,
+      0 2px #424542;
+    border-style: none solid solid solid;
+    background: linear-gradient(0deg, $black-color 0%, $blue-color 100%);
+
+    iframe {
+      flex-shrink: 1;
+      max-width: 520px;
+      padding-right: 10px;
+    }
+
+    p {
+      max-width: 100%;
+    }
+
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    img[alt="Icon"] {
+      width: 32px;
+      height: 32px;
+    }
+
+    img[alt="Small Icon"] {
+      width: 24px;
+      height: 24px;
+    }
+
+    h2:has(> img[alt="Icon"]) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    li:has(> img[alt="Small Icon"]) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: gold;
+      text-shadow:
+        2px 2px #212421,
+        1px 1px #212021;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 0;
+    }
   }
 }
 
