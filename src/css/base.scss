@@ -2,7 +2,7 @@ $blue-color: #04009d;
 $black-color: #06004d;
 $text-color: #eff1ff;
 
-$nav-height: 217px;
+$nav-height: 210px;
 $nav-width: 340px;
 
 html {
@@ -45,6 +45,7 @@ nav {
     list-style-type: none;
 
     li {
+      height: 20px;
       padding: 10px;
       margin: 0;
       text-align: center;
