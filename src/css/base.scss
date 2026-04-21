@@ -3,6 +3,7 @@ $black-color: #06004d;
 $text-color: #eff1ff;
 
 $nav-height: 217px;
+$nav-width: 350px;
 
 html {
   height: 100%;
@@ -16,10 +17,6 @@ body {
   text-shadow:
     2px 2px #212421,
     1px 1px #212021;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 1;
   padding: 10px;
   margin: 0;
 }
@@ -35,6 +32,8 @@ nav {
   border-radius: 15px 0px 0px 15px;
 
   ul {
+    display: flex;
+    flex-flow: column;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -85,6 +84,73 @@ nav {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    width: $nav-width;
+    height: 43px;
+    background: linear-gradient(0deg, $black-color 0%, $blue-color 100%);
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      flex-flow: row;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        border-color: #424542;
+        border-width: 1px;
+        box-shadow:
+          1px 1px #e7dfe7,
+          -1px -1px #e7dfe7,
+          1px -1px #e7dfe7,
+          -1px 1px #e7dfe7,
+          0 -2px #9c9a9c,
+          -2px 0 #7b757b,
+          0 2px #424542;
+        border-style: solid none solid solid;
+      }
+
+      li:first-of-type {
+        border-radius: 15px 0px 0px 0px;
+        border-style: solid none none solid;
+        border-width: 1px;
+      }
+
+      li:last-of-type {
+        border-radius: 0px 15px 0px 0px;
+        border-style: solid solid solid solid;
+        border-width: 1px;
+      }
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #eff1ff;
+      text-shadow:
+        2px 2px #212421,
+        1px 1px #212021;
+      text-decoration: none;
+    }
+
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .content {
