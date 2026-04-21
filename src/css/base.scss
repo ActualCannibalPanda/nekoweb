@@ -6,6 +6,7 @@ $nav-height: 217px;
 
 html {
   height: 100%;
+  width: 100%;
   cursor: url("/assets/cursor.png"), auto;
 }
 
@@ -84,6 +85,7 @@ nav {
 }
 
 .content {
+  overflow: auto;
   min-height: $nav-height;
   padding-left: 10px;
   margin: 0;
