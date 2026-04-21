@@ -35,7 +35,7 @@ function startGame() {
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     const isMobileUserAgent = () => {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(
         navigator.userAgent,
       );
     };
