@@ -4,6 +4,7 @@ $text-color: #eff1ff;
 
 html {
   height: 100%;
+  cursor: url("/assets/cursor.png"), auto;
 }
 
 body {
@@ -13,6 +14,10 @@ body {
     2px 2px #212421,
     1px 1px #212021;
   height: 100%;
+}
+
+a {
+  cursor: url("/assets/cursorlink.png"), auto;
 }
 
 nav {
