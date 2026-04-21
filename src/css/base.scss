@@ -2,8 +2,7 @@ $blue-color: #04009d;
 $black-color: #06004d;
 $text-color: #eff1ff;
 
-$nav-height: 170px;
-$min-content: 158px;
+$nav-height: 173px;
 
 html {
   height: 100%;
@@ -63,7 +62,7 @@ nav {
 
     li:last-of-type {
       border-radius: 0px 0px 0px 15px;
-      border-style: none none solid solid;
+      border-style: solid none solid solid;
       border-width: 1px;
     }
   }
@@ -87,10 +86,12 @@ nav {
 }
 
 .content {
-  min-height: $min-content;
-  padding: 0px 10px 10px 10px;
+  min-height: $nav-height;
+  padding-left: 10px;
+  margin: 0;
   width: 100%;
   border-style: solid;
+  border-width: 1px;
   border-radius: 0px 15px 15px 0px;
   border-color: #424542;
   box-shadow:
