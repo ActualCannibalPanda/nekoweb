@@ -50,9 +50,12 @@ function startGame() {
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     const isMobileUserAgent = () => {
+      if (navigator.userAgentData !== undefined) {
+        return navigator.userAgentData.mobile
+      }
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(
         navigator.userAgent,
-      ) || navigator.userAgentData.mobile;
+      );
     };
 
     if (isMobileUserAgent()) {
