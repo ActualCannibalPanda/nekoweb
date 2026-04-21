@@ -7,23 +7,26 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
 .site-box {
     text-align: center;
-    background-image: url(/assets/cookiebox.png); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+    background-image: url(/assets/cookiebox.png);
+    /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
     background-repeat: no-repeat;
     color: #b08271;
     font-size: 12px;
 }
-.site-box > a > p {
+
+.site-box>a>p {
     color: var(--darkbrown);
     font-weight: bold;
 }
-.site-box > a > span {
+
+.site-box>a>span {
     color: var(--darkbrown);
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
-/* .follow {
-
-} */
+.follow {
+    margin: 0;
+}
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
