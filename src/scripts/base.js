@@ -1,4 +1,4 @@
-addEventListener("resize", () => {
+const resize = () => {
   if (window.innerWidth > 800) {
     document.querySelectorAll(".content p").forEach((element) => {
       if (!element.classList.contains("bigp")) {
@@ -12,4 +12,11 @@ addEventListener("resize", () => {
       }
     });
   }
-});
+};
+
+document.onreadystatechange = () => {
+  if (document.readyState == "complete") {
+    resize();
+    addEventListener("resize", resize);
+  }
+};
