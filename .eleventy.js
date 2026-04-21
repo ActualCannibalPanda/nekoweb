@@ -26,6 +26,7 @@ export default function (eleventyConfig) {
       };
     },
   });
+
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addPassthroughCopy("src/css/*.css");
   eleventyConfig.addPassthroughCopy("src/*.css");
