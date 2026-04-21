@@ -1,23 +1,5 @@
-// const resize = () => {
-//   if (window.innerWidth > 800) {
-//     document.querySelectorAll(".content p").forEach((element) => {
-//       if (!element.classList.contains("bigp")) {
-//         element.classList.add("bigp");
-//       }
-//     });
-//   } else {
-//     document.querySelectorAll(".content p").forEach((element) => {
-//       if (element.classList.contains("bigp")) {
-//         element.classList.remove("bigp");
-//       }
-//     });
-//   }
-// };
-
 document.onreadystatechange = () => {
   if (document.readyState == "complete") {
-    // resize();
-    // addEventListener("resize", resize);
     const isMobileUserAgent = () => {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent,
@@ -25,9 +7,10 @@ document.onreadystatechange = () => {
     };
 
     if (isMobileUserAgent()) {
-      document.querySelectorAll(".content p").forEach((element) => {
-        element.classList.add("mobile");
-      });
+      let canvas = document.getElementById("game");
+      if (canvas !== null) {
+        canvas.outerHTML = "<p>Game is not playable on mobile! Sorry!<p>";
+      }
     }
   }
 };
