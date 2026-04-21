@@ -18,10 +18,15 @@ document.onreadystatechange = () => {
   if (document.readyState == "complete") {
     resize();
     addEventListener("resize", resize);
-    if (screen.orientation !== undefined) {
+    const isMobileUserAgent = () => {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      );
+    };
+
+    if (isMobileUserAgent()) {
       document.querySelectorAll(".content p").forEach((element) => {
         element.classList.add("mobile");
-        console.log("here");
       });
     }
   }

@@ -93,7 +93,6 @@ nav {
   flex-direction: column;
   min-height: $nav-height - 40px;
   padding: 20px;
-  min-width: 325px;
   margin: 0;
   border-style: solid;
   border-width: 1px;
@@ -126,7 +125,7 @@ nav {
   }
 
   p.mobile {
-    max-width: 200px;
+    max-width: 300px;
   }
 
   h1 {
