@@ -101,6 +101,7 @@ nav {
     display: flex;
     flex-flow: row;
     flex-grow: 1;
+    margin: 0;
 
     ul {
       display: table;
@@ -167,6 +168,7 @@ nav {
   display: flex;
   flex-direction: column;
   min-height: $nav-height - 40px;
+  min-width: 600px;
   padding: 20px;
   margin: 10px 0 20px 0;
   border-style: solid;
@@ -191,7 +193,7 @@ nav {
   }
 
   p {
-    max-width: 800px;
+    max-width: 600px;
   }
 
   h1 {
@@ -255,7 +257,8 @@ nav {
     flex-direction: column;
     height: 100%;
     padding: 20px;
-    margin: 0;
+    margin: 0 0 0 0;
+    min-width: 0;
     border-style: solid;
     border-width: 1px;
     border-radius: 0px 0px 15px 15px;
