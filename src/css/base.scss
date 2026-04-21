@@ -40,19 +40,7 @@ nav {
       border-style: solid none solid solid;
     }
   }
-}
 
-nav {
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: #eff1ff;
-    text-shadow:
-      2px 2px #212421,
-      1px 1px #212021;
-    text-decoration: none;
-  }
   ul {
     li:first-of-type {
       border-radius: 15px 0px 0px 0px;
@@ -65,6 +53,17 @@ nav {
       border-style: none none solid solid;
       border-width: 1px;
     }
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #eff1ff;
+    text-shadow:
+      2px 2px #212421,
+      1px 1px #212021;
+    text-decoration: none;
   }
 }
 
