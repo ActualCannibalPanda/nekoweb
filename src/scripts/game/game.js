@@ -1,6 +1,7 @@
 import * as math from "./math.js";
 import { Color } from "./color.js";
 import { Rect } from "./rect.js";
+import { Text } from "./text.js";
 
 export class Game {
   /**
@@ -46,6 +47,8 @@ export class Game {
     this.frameCount = 0;
 
     this.rect = new Rect(200, 10, 100, 100, new Color(255, 10, 10, 255));
+    this.helloWorld = new Text("Hello World", 0, 0, new Color(255, 255, 255, 255), undefined, "center", "50px serif");
+    this.fps = new Text("", 10, 20, new Color(255, 255, 255, 255), undefined, "left", "10px serif");
   }
 
   /**
@@ -71,6 +74,8 @@ export class Game {
 
   update(dt) {
     this.rect.x += math.sin(math.deg2rad(Date.now()), 10, 15);
+    this.helloWorld.x = this.canvas.width / 2;
+    this.helloWorld.y = this.canvas.height / 2 + math.sin(math.deg2rad(Date.now()), 20, 15);
   }
 
   postUpdate() {
@@ -84,22 +89,14 @@ export class Game {
 
       this.ctx.fillStyle = "black";
       this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-      this.rect.draw(this.ctx);
-      var y = math.sin(math.deg2rad(Date.now()), 20, 15);
-      this.ctx.fillStyle = "white";
-      this.ctx.font = "50px serif";
-      var text = this.ctx.measureText("Hello World");
-      this.ctx.fillText(
-        "Hello World",
-        this.canvas.width / 2 - text.width / 2,
-        y + this.canvas.height / 2 + 25,
-      );
 
+      this.rect.draw(this.ctx);
+      this.helloWorld.draw(this.ctx);
 
       var sinceStart = Date.now() - this.startTime;
       var currentFps = Math.round(Math.round(1000 / (sinceStart / ++this.frameCount) * 100) / 100);
-      this.ctx.font = "10px serif";
-      this.ctx.fillText("" + currentFps + " fps.", 0, 20);
+      this.fps.text = "" + currentFps + " fps";
+      this.fps.draw(this.ctx);
     }
   }
 
