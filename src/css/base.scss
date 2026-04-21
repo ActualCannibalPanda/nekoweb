@@ -2,6 +2,9 @@ $blue-color: #04009d;
 $black-color: #06004d;
 $text-color: #eff1ff;
 
+$nav-height: 170px;
+$min-content: 158px;
+
 html {
   height: 100%;
   cursor: url("/assets/cursor.png"), auto;
@@ -22,7 +25,7 @@ a {
 
 nav {
   width: 100px;
-  height: 130px;
+  height: $nav-height;
   margin: 0;
   display: inline-block;
   background: linear-gradient(0deg, $black-color 0%, $blue-color 100%);
@@ -84,6 +87,7 @@ nav {
 }
 
 .content {
+  min-height: $min-content;
   padding: 0px 10px 10px 10px;
   width: 100%;
   border-style: solid;
@@ -109,12 +113,25 @@ nav {
     height: 32px;
   }
 
+  img[alt="Small Icon"] {
+    width: 24px;
+    height: 24px;
+  }
+
   h2:has(> img[alt="Icon"]) {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  li:has(> img[alt="Small Icon"]) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 5px;
   }
 
