@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        {% include "partials/head.njk" %}
+        <script src="/scripts/game.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            {% include "partials/nav.njk" %}
+            <div class="content">
+                {{ content | safe }}
+                <canvas id="game" width="400" height="400" style="border:1px solid #000000;"></canvas>
+            </div>
+        </div>
+    </body>
+</html>

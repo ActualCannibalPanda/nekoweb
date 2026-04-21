@@ -28,6 +28,7 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addPassthroughCopy("src/css/*.css");
+  eleventyConfig.addPassthroughCopy("src/scripts/*.js");
   eleventyConfig.addPassthroughCopy("src/assets/*");
 
   return {
