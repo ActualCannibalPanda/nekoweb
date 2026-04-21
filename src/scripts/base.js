@@ -18,5 +18,8 @@ document.onreadystatechange = () => {
   if (document.readyState == "complete") {
     resize();
     addEventListener("resize", resize);
+    if (screen.orientation !== undefined) {
+      document.querySelector("p").innerText = "Mobile";
+    }
   }
 };
