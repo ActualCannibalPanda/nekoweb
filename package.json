@@ -13,12 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ActualCannibalPanda/nekoweb/issues"
   },
   "homepage": "https://github.com/ActualCannibalPanda/nekoweb#readme",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.5"
+    "@11ty/eleventy": "^3.1.5",
+    "sass": "^1.99.0"
   }
 }
