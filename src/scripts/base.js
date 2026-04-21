@@ -19,7 +19,9 @@ document.onreadystatechange = () => {
     resize();
     addEventListener("resize", resize);
     if (screen.orientation !== undefined) {
-      console.log("HERE");
+      document.querySelectorAll(".content p").forEach((element) => {
+        element.classList.add("mobile");
+      });
     }
   }
 };
