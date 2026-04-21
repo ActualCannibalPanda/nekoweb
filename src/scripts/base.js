@@ -1,23 +1,23 @@
-const resize = () => {
-  if (window.innerWidth > 800) {
-    document.querySelectorAll(".content p").forEach((element) => {
-      if (!element.classList.contains("bigp")) {
-        element.classList.add("bigp");
-      }
-    });
-  } else {
-    document.querySelectorAll(".content p").forEach((element) => {
-      if (element.classList.contains("bigp")) {
-        element.classList.remove("bigp");
-      }
-    });
-  }
-};
+// const resize = () => {
+//   if (window.innerWidth > 800) {
+//     document.querySelectorAll(".content p").forEach((element) => {
+//       if (!element.classList.contains("bigp")) {
+//         element.classList.add("bigp");
+//       }
+//     });
+//   } else {
+//     document.querySelectorAll(".content p").forEach((element) => {
+//       if (element.classList.contains("bigp")) {
+//         element.classList.remove("bigp");
+//       }
+//     });
+//   }
+// };
 
 document.onreadystatechange = () => {
   if (document.readyState == "complete") {
-    resize();
-    addEventListener("resize", resize);
+    // resize();
+    // addEventListener("resize", resize);
     const isMobileUserAgent = () => {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent,

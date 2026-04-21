@@ -116,16 +116,14 @@ nav {
   }
 
   p {
-    max-width: 100%;
+    max-width: 800px;
     margin: 10px 10px 10px 0;
   }
 
-  p.bigp {
-    max-width: 800px;
-  }
-
-  p.mobile {
-    max-width: 300px;
+  @media screen and (max-width: 800px) {
+    p {
+      max-width: 100%;
+    }
   }
 
   h1 {
