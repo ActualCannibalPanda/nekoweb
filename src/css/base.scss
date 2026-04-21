@@ -116,8 +116,12 @@ nav {
   }
 
   p {
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 10px;
+  }
+
+  p.bigp {
+    max-width: 800px;
   }
 
   h1 {
