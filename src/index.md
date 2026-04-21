@@ -1,5 +1,5 @@
 ---
-title: home page
+title: Welcome
 layout: base.njk
 ---
 

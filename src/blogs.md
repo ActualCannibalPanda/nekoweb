@@ -1,9 +1,7 @@
 ---
-title: blog
+title: Blogs
 layout: base.njk
 ---
-
-# Blogs
 
 ## April 2026
 
