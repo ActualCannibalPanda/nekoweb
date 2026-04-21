@@ -21,6 +21,7 @@ document.onreadystatechange = () => {
     if (screen.orientation !== undefined) {
       document.querySelectorAll(".content p").forEach((element) => {
         element.classList.add("mobile");
+        console.log("here");
       });
     }
   }
