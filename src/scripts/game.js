@@ -1,16 +1,28 @@
+/**
+ * @type {HTMLElement|null}
+ */
 let canvas = null;
 /**
  * @type {CanvasRenderingContext2D}
  */
 let ctx = null;
+/**
+ * @type {number}
+ */
 let lastUpdate = Date.now();
 let dt = 0.0;
 
+/**
+ * Called every frame to update game logic.
+ */
 function update() {
   var now = Date.now();
   dt = now - lastUpdate;
 }
 
+/**
+ * Called every frame to draw to the canvas.
+ */
 function draw() {
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -25,6 +37,9 @@ function draw() {
   );
 }
 
+/**
+ * Starts the game by gathering necessary data.
+ */
 function startGame() {
   canvas = document.getElementById("game");
   ctx = canvas.getContext("2d");
@@ -37,10 +52,11 @@ document.onreadystatechange = function () {
     const isMobileUserAgent = () => {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(
         navigator.userAgent,
-      );
+      ) || navigator.userAgentData.mobile;
     };
 
     if (isMobileUserAgent()) {
+      // if we detect a mobile 
       let canvas = document.getElementById("game");
       if (canvas !== null) {
         canvas.outerHTML = "<p>Game is not playable on mobile! Sorry!<p>";
