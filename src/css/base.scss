@@ -2,12 +2,17 @@ $blue-color: #04009d;
 $black-color: #06004d;
 $text-color: #eff1ff;
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: black;
   color: $text-color;
   text-shadow:
     2px 2px #212421,
     1px 1px #212021;
+  height: 100%;
 }
 
 nav {
