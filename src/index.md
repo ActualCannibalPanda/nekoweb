@@ -15,7 +15,7 @@ To see games I've worked on check out [here](/games/)
     <p>Final Fantasy XI</p><img src="assets/mr15.png" alt="Mithra">
 </div>
 
-* **Character Name**: Cromakre
-* **Server**: Bahamut
-* **Race**: Mithra
-* **Favourite Jobs**: RDM, PLD, WAR
+- **Character Name**: Cromakre
+- **Server**: Bahamut
+- **Race**: Mithra
+- **Favourite Jobs**: RDM, PLD, WAR

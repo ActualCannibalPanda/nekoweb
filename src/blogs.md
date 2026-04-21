@@ -5,4 +5,4 @@ layout: base.njk
 
 # Blogs
 
-* [Test Blog](/blogs/test/)
+- [Test Blog](/blogs/test/)
