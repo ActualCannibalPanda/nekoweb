@@ -44,7 +44,7 @@ nav {
     padding: 0;
     list-style-type: none;
 
-    li {
+    a {
       height: 20px;
       padding: 10px;
       margin: 0;
@@ -62,13 +62,13 @@ nav {
       border-style: solid none solid solid;
     }
 
-    li:first-of-type {
+    a:first-of-type {
       border-radius: 15px 0px 0px 0px;
       border-style: solid none none solid;
       border-width: 1px;
     }
 
-    li:last-of-type {
+    a:last-of-type {
       border-radius: 0px 0px 0px 15px;
       border-style: solid none solid solid;
       border-width: 1px;
@@ -112,7 +112,7 @@ nav {
       padding: 0;
       list-style-type: none;
 
-      li {
+      a {
         display: table-cell;
         width: auto;
         padding: 10px;
@@ -131,13 +131,13 @@ nav {
         border-style: solid none solid solid;
       }
 
-      li:first-of-type {
+      a:first-of-type {
         border-radius: 15px 0px 0px 0px;
         border-style: solid none none solid;
         border-width: 1px;
       }
 
-      li:last-of-type {
+      a:last-of-type {
         border-radius: 0px 15px 0px 0px;
         border-style: solid solid solid solid;
         border-width: 1px;
