@@ -256,6 +256,7 @@ nav {
   .content {
     overflow: auto;
     display: flex;
+    min-width: 400px;
     flex-direction: column;
     height: 100%;
     padding: 20px;

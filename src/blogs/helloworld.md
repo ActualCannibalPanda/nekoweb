@@ -10,7 +10,7 @@ This is my first blog post on this website so I want to cover what the website's
 
 I created this website as partly as a portfolio and partly for a nice side project. I am the kind of person who likes to work on something even if it serves no real purpose to anyone outside of myself. One thing I've always struggled with is web development so what better way to improve those skills than by creating a website.
 
-My main interest when it comes to programming is game development so I am also challenging myself to make a game that will be hosted on this website which will be hosted [here](/game). It will be purely in Javascript and will be using HTML5's canvas element so I will be writing my own game library to facilitate it's creation. I am still deciding on what that game will be but I'll be revealing it in a blog when I have a better idea of what it will be.
+My main interest when it comes to programming is game development so I am also challenging myself to make a game that will be hosted on this website which will be hosted [here](/game/?u=1). It will be purely in Javascript and will be using HTML5's canvas element so I will be writing my own game library to facilitate it's creation. I am still deciding on what that game will be but I'll be revealing it in a blog when I have a better idea of what it will be.
 
 I also plan to use this website as a portfolio of sorts, showcasing projects I have worked on and any future projects. I want it to be a nice confined space to show off my skills to any prospective teams I might join.
 
