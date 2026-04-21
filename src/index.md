@@ -7,15 +7,21 @@ layout: base.njk
 
 I am ActualPanda a game developer and gamer from Ireland. I plan to use this website for talking about programming and projects I work on.
 
-To see games I've worked on check out [here](/games/)
+To see games I've worked on check out [here](/games/).
 
-## Games I play:
+# Games I play:
 
-<div class="ffxi">
-    <p>Final Fantasy XI</p><img src="assets/mr15.png" alt="Mithra">
-</div>
+## Final Fantasy XI ![Icon](/assets/mr15.png)
 
-- **Character Name**: Cromakre
-- **Server**: Bahamut
-- **Race**: Mithra
-- **Favourite Jobs**: RDM, PLD, WAR
+- <span class="list-em">Character Name:</span> Cromakre
+- <span class="list-em">Server:</span> Bahamut
+- <span class="list-em">Race:</span> Mithra
+- <span class="list-em">Favourite Jobs:</span> Red Mage, Paladin, Warrior
+
+## Final Fantasy XIV ![Icon](/assets/ffxiv.png)
+
+- <span class="list-em">Character Name:</span> Krieger Welt
+- <span class="list-em">Server:</span> Odin
+- <span class="list-em">FC:</span> Stellar Memoria
+- <span class="list-em">Race:</span> Mi'qote
+- <span class="list-em">Favourite Jobs:</span> Gunbreaker, Samurai, Black Mage
