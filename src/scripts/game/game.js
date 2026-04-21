@@ -1,4 +1,6 @@
 import * as math from "./math.js";
+import { Color } from "./color.js";
+import { Rect } from "./rect.js";
 
 export class Game {
   /**
@@ -42,6 +44,8 @@ export class Game {
     this.timeElapsed = 0.0;
     this.startTime = 0.0;
     this.frameCount = 0;
+
+    this.rect = new Rect(200, 10, 100, 100, new Color(255, 10, 10, 255));
   }
 
   /**
@@ -66,7 +70,7 @@ export class Game {
   }
 
   update(dt) {
-    // TODO: ADd Implementation
+    this.rect.x += math.sin(math.deg2rad(Date.now()), 10, 15);
   }
 
   postUpdate() {
@@ -77,8 +81,10 @@ export class Game {
     if (this.timeElapsed > this.fpsInterval) {
       this.then = Date.now() - (this.timeElapsed % this.fpsInterval);
 
+
       this.ctx.fillStyle = "black";
       this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+      this.rect.draw(this.ctx);
       var y = math.sin(math.deg2rad(Date.now()), 20, 15);
       this.ctx.fillStyle = "white";
       this.ctx.font = "50px serif";
@@ -88,6 +94,7 @@ export class Game {
         this.canvas.width / 2 - text.width / 2,
         y + this.canvas.height / 2 + 25,
       );
+
 
       var sinceStart = Date.now() - this.startTime;
       var currentFps = Math.round(Math.round(1000 / (sinceStart / ++this.frameCount) * 100) / 100);
