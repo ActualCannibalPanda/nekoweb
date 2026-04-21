@@ -1,0 +1,20 @@
+<rss version="2.0">
+    <channel>
+        <title>Blog Posts from ActualPanda</title>
+        <description>ActualPanda's blog posts</description>
+        <link>https://actualpanda.nekoweb.org/blogs</link>
+
+        <item>
+            <title>Hello World</title>
+            <description>An intro to the new website</description>
+            <link>https://actualpanda.mekoweb.org/blogs/helloworld</link>
+            <guid>post-1</guid>
+            <pubDate>Tues 21 Apr 2026, 08:12:00 +0000</pubDate>
+            <style>
+                .post-box .post-title {
+                    color: red;
+                }
+            </style>
+        </item>
+    </channel>
+</rss>

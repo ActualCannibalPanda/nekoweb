@@ -30,6 +30,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/*.css");
   eleventyConfig.addPassthroughCopy("src/scripts/*.js");
   eleventyConfig.addPassthroughCopy("src/assets/*");
+  eleventyConfig.addPassthroughCopy("src/rss.xml");
 
   return {
     dir: {
